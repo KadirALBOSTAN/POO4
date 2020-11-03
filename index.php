@@ -10,7 +10,7 @@ require_once 'ResidentialWay.php';
 
 $Lambo = new Car("black", "5", "diesel");
 try {
-    echo "Trying to start my car!<br>";
+    echo "Essaye de démarrer la voiture!<br>";
     $Lambo->start();
 } catch(Exception $e) {
     $Lambo->setHasParkBrake(false);
