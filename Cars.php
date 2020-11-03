@@ -33,7 +33,7 @@ class Car extends Vehicle
     public function start(): string
     {
         if ($this->hasParkBrake === true)
-            throw(new Exception("Handbrake is activated!"));
+            throw(new Exception("Frein à main bloqué!"));
         else
             $this->currentSpeed = 3; // Car starts to roll forward, like in "real life"
         return "Car started !";
